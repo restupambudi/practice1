@@ -133,7 +133,5 @@ describe('My First Test', () => {
     cy.get('.trigger-input-range')
     .get('input[type=range]').siblings('p')
     .should('have.text', '25')
-
-    //sdadadasdwqedqirqio
   })
 })
