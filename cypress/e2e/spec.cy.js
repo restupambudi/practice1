@@ -14,8 +14,8 @@ describe('test suite with CSP enabled', () => {
 
 describe('template spec', () => {
   it('passes', () => {
-    // cy.visit('http://ctas-qa.intranet.pajak.go.id', {failOnStatusCode: false})
-    cy.openWindow('http://ctas-qa.intranet.pajak.go.id')
+    cy.visit('http://ctas-qa.intranet.pajak.go.id', {failOnStatusCode: false})
+    // cy.openWindow('http://ctas-qa.intranet.pajak.go.id')
     Cypress.on('uncaught:exception', (err, runnable) => {
       // returning false here prevents Cypress from
       // failing the test
